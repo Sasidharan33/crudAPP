@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    top: 0;
+    margin: 0;
+}
+.login-main{
+    margin-top: 60px;    
+    width: 92%;
+    margin-left: 4%;
+    height: 600px;
+    /* border-style: dotted; */
+    background-color: #f0e3e3;
+}
+.login-image{
+    margin-left: 8%;
+    margin-top: 100px;
+    width: 42%;
+    height: 400px;
+    /* border-style: dotted; */
+    float: left;
+}
+.login-form{
+    width: 42%;
+    height: 400px;
+    margin-top: 100px;
+    /* border-style: dotted; */
+    float: left;
+    text-align:center;
+    background-color: white;
+}
+.heding1{
+    margin-top: 50px;
+}
+.inp1{
+    margin-top: 20px;
+    width: 60%;
+    height: 30px;
+}
+.inp2{
+    margin-top: 20px;
+    width: 60%;
+    height: 30px;
+}
+.inp3{
+    margin-top: 20px;
+    width: 60%;
+    height: 30px;
+}
+.button1{
+    margin-top: 20px;
+    width: 60%;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: green;
+}
+.image{
+    width: 100%;
+    height: 400px;
+}
+.errors{
+    color: red;
+}
+.container{
+    width: 100%;
+    height: 600px;
+    /* border-style: dotted; */
+    text-align: center;
+    background-color: #f0e3e3;
+    padding-top: 50px;
+}
+.heading1{
+    margin-bottom: 20px;
+}
+.list-container{
+    width: 70%;
+    height: 400px;
+    /* border-style: dotted; */
+    margin-left: 15%;
+    background-color: white;
+}
+.add{
+    width: 7%;
+    height: 35px;
+    background-color: green;
+    border: none;
+    margin: 20px 3% 0 90%;
+    border-radius: 5px;
+   
+}
+.add1{
+    text-decoration: none;
+    color: white;
+}
+.heading-row{
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    border: 1px solid black;
+}
+.user-table{
+    width: 94%;
+    margin-left: 3%;
+    border-bottom: 2px solid black;
+
+}
+.heading{
+    width: 20%;
+    height: 30px;
+    /* border-style: dotted; */
+}
+.user-list{
+    width: 100%;
+    height: 660px;
+    padding-top: 70px;
+    /* border-style: dotted; */
+    /* background-color: #f0e3e3 ; */
+    background-image: url(images/nature-hd-sd.jpg);
+    background-size: cover;
+}
+.user-list1{
+    width: 40%;
+    height: 520px;
+    margin-left: 30%;
+    /* border-style: dotted; */
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    padding-top: 50px;
+}
+.list-input{
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 2%;
+}
+.list-button{
+    width: 52%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: red;
+    border-style: none;
+}
+.list-button1{
+    width: 52%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(95, 117, 152);
+    border-style: none;
+    color: white;
+}
