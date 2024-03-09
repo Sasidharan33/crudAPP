@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import * as yup from 'yup'
 import {useFormik} from 'formik'
+import axios from 'axios'
 
 const schema = yup.object().shape({
    Name:yup 
@@ -16,26 +17,40 @@ const schema = yup.object().shape({
    .number()
    .required('phone number is required')
    .min(10,'phone atleast 10 digits long'),
-   password:yup 
-   .string()
-   .required('confirm password')
-   .min(4,'password atleast 4 letters')
+   age:yup 
+   .number()
+   .required('age is required')
 })
-function List() {
+function List({token}) {
+  useEffect(() => {
+     console.log(token)
+  },[])
+  const config = {
+    headers: {authorization: `bearer ${token}`}
+  }
   const {values,handleChange,handleBlur,handleSubmit,isSubmitting,errors} = useFormik({
     initialValues:{
       Name:'',
       email:'',
       phone:'',
-      password:''
+      age:''
     },
     validationSchema:schema,
-  onSubmit:(values,actions) => {
-    console.log(values)
+  onSubmit:async(values,actions) => {
+    console.log(token)
+    try{
+      console.log(values,config)
+    const res = await axios.post('http://localhost:3002/api/list',values,config);
+    console.log(res.data)
     setTimeout(() => {
     actions.resetForm();
     actions.setSubmitting(false)
     },1000)
+    
+  }
+  catch(err){
+    console.log(err.response.data.message)
+  }
   }
     
 
@@ -72,15 +87,15 @@ function List() {
           value={values.phone}
           /><br />
           <p className='errors'>{errors.phone}</p>
-          <input type="password" 
+          <input type="number" 
           className='list-input' 
-          placeholder='Enter Password'
-          name='password'
+          placeholder='Enter Age'
+          name='age'
           onChange={handleChange}
           onBlur={handleBlur}
-          value={values.password}
+          value={values.age}
           /><br />
-          <p className='errors'>{errors.password}</p>
+          <p className='errors'>{errors.age}</p>
           <button className='list-button1'><Link className='add1' to='/'><h3>BACK</h3></Link></button><br />
           <button type='submit' disabled={isSubmitting} className='list-button1'><h3>CREATE</h3></button>
         </form>

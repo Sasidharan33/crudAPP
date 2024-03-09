@@ -63,7 +63,7 @@
 }
 .container{
     width: 100%;
-    height: 600px;
+    height: 680px;
     /* border-style: dotted; */
     text-align: center;
     background-color: #f0e3e3;
@@ -108,6 +108,7 @@
     width: 20%;
     height: 30px;
     /* border-style: dotted; */
+    text-align: left;
 }
 .user-list{
     width: 100%;
@@ -149,3 +150,105 @@
     border-style: none;
     color: white;
 }
+.read{
+    width: 19%;
+    height: 25px;
+    border-radius: 3px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    margin-right: 2%;
+    text-decoration: none;
+}
+.update{
+    width: 22%;
+    height: 25px;
+    border-radius: 3px;
+    background-color: rgb(89, 226, 43);
+    color: white;
+    border: none;
+    margin-right: 2%;
+    text-decoration: none;
+}
+.delete{
+    width: 20%;
+    height: 25px;
+    border-radius: 3px;
+    background-color: rgb(226, 104, 43);
+    color: white;
+    border: none;
+}
+.read-main{
+    width: 40%;
+    height: 200px;
+    /* border-style: dotted; */
+    padding-top: 20px;
+    /* text-align: center; */
+    background-color: aqua;
+    margin-left: 30%;
+    margin-top: 200px;
+}
+.d1{
+    margin-left: 10%;
+    margin-bottom: 5px;
+}
+.d1-head{
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+.d1-button{
+    margin-left: 10%;
+    width: 10%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+}
+.back-link{
+    text-decoration: none;
+    color: white;
+}
+.lab1{
+    font-size: 20px;
+    margin: 50px 10% 0 10%;
+    font-weight: 600;
+}
+.inpp1{
+    width: 80%;
+    height: 40px;
+    margin: 10px 10% 10px 10%;
+}
+.update-form{
+    width: 40%;
+    height: 500px;
+    margin-left: 30%;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f0e3e3;
+}
+.update-form h1{
+    text-align: center;
+    margin: 20px 0 0 20px;  
+}
+.lab2{
+    font-size: 20px;
+    margin: 0 10% 0 10%;
+    font-weight: 600;
+}
+.updte-but{
+    width: 10%;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    margin: 20px 0 0 10%;
+}
+.update-back{
+    width: 10%;
+    height: 30px;
+    background-color: red;
+    border: none;
+    margin-left: 5%; 
+}
+
