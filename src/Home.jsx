@@ -6,13 +6,13 @@ function Home({list,setlist,token}) {
     headers: {authorization: `bearer ${token}`}
   }
   const handleclick = async(_id) => {
-    const res = await axios.delete('http://localhost:3002/api/list/'+_id)
+    const res = await axios.delete('https://crud-be-ey69.onrender.com/api/list/'+_id)
     console.log(res.data);
     
 }
   useEffect(() => {
   const fetchdata = async() => {
-    const res = await axios.get('http://localhost:3002/api/list', config)
+    const res = await axios.get('https://crud-be-ey69.onrender.com/api/list', config)
    if(res.data){
     const userlist = res.data
     // window.localStorage.setItem('listdata',JSON.stringify(userlist))

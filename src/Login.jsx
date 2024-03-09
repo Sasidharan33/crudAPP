@@ -31,7 +31,7 @@ function Login({token,settoken,user,setUser}) {
     validationSchema:schema,
     onSubmit:async(values,actions) => {
      try{
-       const res = await axios.post('http://localhost:3002/api/login',values)
+       const res = await axios.post('https://crud-be-ey69.onrender.com/api/login',values)
        if(res.statusText='OK'){
         Setregistered(true)
         const user=res.data

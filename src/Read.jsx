@@ -6,7 +6,7 @@ function Read({detail,setdetail}) {
     const {_id} = useParams()
     useEffect(() => {
       const fetchdata = async () => {
-        const res = await axios.get('http://localhost:3002/api/list/'+_id)
+        const res = await axios.get('https://crud-be-ey69.onrender.com/api/list/'+_id)
         if(res.data){
           setdetail(res.data) 
           console.log(detail) 

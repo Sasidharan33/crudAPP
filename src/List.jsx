@@ -40,7 +40,7 @@ function List({token}) {
     console.log(token)
     try{
       console.log(values,config)
-    const res = await axios.post('http://localhost:3002/api/list',values,config);
+    const res = await axios.post('https://crud-be-ey69.onrender.com/api/list',values,config);
     console.log(res.data)
     setTimeout(() => {
     actions.resetForm();

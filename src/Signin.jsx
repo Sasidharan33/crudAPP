@@ -34,7 +34,7 @@ function Signin() {
       validationSchema:schema,
       onSubmit:async(values,actions) => {
       try{
-        const res = await axios.post('http://localhost:3002/api/users',values);
+        const res = await axios.post('https://crud-be-ey69.onrender.com/api/users',values);
         if(res.statusText='OK'){
           console.log(values)
           Setregistered(true)

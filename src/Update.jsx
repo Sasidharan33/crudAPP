@@ -26,7 +26,7 @@ function Update({update,setupdate}) {
   const {_id} = useParams()
   useEffect(() => {
     const fetchdata = async() => {
-      const res = await axios.get('http://localhost:3002/api/list/'+_id)
+      const res = await axios.get('https://crud-be-ey69.onrender.com/api/list/'+_id)
         setupdate(res.data) 
         console.log(update) 
     }
@@ -35,7 +35,7 @@ function Update({update,setupdate}) {
 
   const handlesubmit =async(event) => {
     event.preventDefault();
-    const res = await axios.put('http://localhost:3002/api/list/'+update._id,update)
+    const res = await axios.put('https://crud-be-ey69.onrender.com/api/list/'+update._id,update)
     setupdate(res.data)
     console.log(res.data)
   }
